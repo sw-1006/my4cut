@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "LeeSeoyun";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightyellow;
+}
+
+.container {
+    width: 270px;
+    height: 800px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photos {
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.f-title {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.f-date {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.photo-frame {
+    height: 150px;
+    background-size: cover; 
+    position: relative;
+    overflow: hidden;
+    margin: 10px 20px; /* 10px - top bottom, 20px - left right*/
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container:nth-child(1) {
+    background-image: url("img/bg_snowman1.png")
+}
+
+.container:nth-child(2) {
+    background-image: url("img/bg_snowing.png")
+}
+
+.container:nth-child(3) {
+    background-image: url("img/bg_tree.png")
+}
+
+.container:nth-child(4) {
+    background-image: url("img/bg_snowman2.png")
+}
